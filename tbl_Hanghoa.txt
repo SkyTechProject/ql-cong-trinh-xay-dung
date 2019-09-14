@@ -1,0 +1,26 @@
+USE [QL_XayDung]
+GO
+
+/****** Object:  Table [dbo].[tbl_Hanghoa]    Script Date: 14/09/2019 11:19:17 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[tbl_Hanghoa](
+	[MaHH] [nvarchar](50) NOT NULL,
+	[MaNCC] [nvarchar](50) NULL,
+	[TenHH] [nvarchar](200) NULL,
+	[Donvitinh] [nvarchar](50) NULL,
+	[Gianhap] [int] NULL,
+	[Ghichu] [nchar](10) NULL,
+ CONSTRAINT [PK_tbl_Hanghoa] PRIMARY KEY CLUSTERED 
+(
+	[MaHH] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
