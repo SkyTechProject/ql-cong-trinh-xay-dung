@@ -1,0 +1,33 @@
+USE [QL_XayDung]
+GO
+
+/****** Object:  Table [dbo].[tbl_Hopdong]    Script Date: 15/09/2019 1:13:34 AM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[tbl_Hopdong](
+	[MaHD] [nvarchar](50) NOT NULL,
+	[TenHD] [nvarchar](200) NULL,
+	[MaKH] [nvarchar](50) NULL,
+	[Tonggiatrihopdong] [int] NULL,
+	[Tongtamung] [int] NULL,
+	[Tongtamchi] [int] NULL,
+	[Ngaybatdau] [datetime] NULL,
+	[Ngayketthuc] [datetime] NULL,
+	[Ngaykhoitao] [datetime] NULL,
+	[Nguoitao] [nvarchar](50) NULL,
+	[Tiendoduan] [nvarchar](50) NULL,
+	[Trangthai] [nvarchar](50) NULL,
+	[Ghichu] [nvarchar](50) NULL,
+ CONSTRAINT [PK_tbl_Hopdong] PRIMARY KEY CLUSTERED 
+(
+	[MaHD] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
