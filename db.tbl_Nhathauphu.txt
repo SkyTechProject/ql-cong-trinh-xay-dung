@@ -1,0 +1,32 @@
+USE [QL_XayDung]
+GO
+
+/****** Object:  Table [dbo].[tbl_Nhathauphu]    Script Date: 14/09/2019 11:59:22 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[tbl_Nhathauphu](
+	[MaNTP] [nvarchar](50) NOT NULL,
+	[TenNTP] [nvarchar](200) NULL,
+	[Nguoidaidien] [nvarchar](200) NULL,
+	[Chucvu] [nvarchar](50) NULL,
+	[Diachi] [nvarchar](200) NULL,
+	[Dienthoai] [nvarchar](50) NULL,
+	[Email] [nvarchar](50) NULL,
+	[Website] [nvarchar](50) NULL,
+	[Masothue] [nvarchar](50) NULL,
+	[Sotaikhoan] [nvarchar](50) NULL,
+	[Nganhang] [nvarchar](200) NULL,
+	[Ghichu] [nvarchar](50) NULL,
+ CONSTRAINT [PK_tbl_Nhathauphu] PRIMARY KEY CLUSTERED 
+(
+	[MaNTP] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+
